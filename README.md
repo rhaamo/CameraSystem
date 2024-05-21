@@ -6,6 +6,8 @@ Just import the unitypackage or do things with this repository if you are playfu
 
 An example scene has been provided with everything already setup in place.
 
+Otherwise prefabs are provided, but I can't guarantee everything will work, so best way is to open the scene along your actual one, and move the system you want, then adapt stuff.
+
 There is two systems:
 
 - A full one, with three fixed cameras and three handhelds

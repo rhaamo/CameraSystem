@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5457269348523597857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1363915321567167701}
+  - component: {fileID: 9016876141250315610}
+  - component: {fileID: 8543308461744737650}
+  m_Layer: 0
+  m_Name: CameraSystemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1363915321567167701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457269348523597857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.455964, y: -1.820159, z: 11.333845}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9016876141250315610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457269348523597857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14cb14e50950304eab77b70f4649c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _udonSharpBackingUdonBehaviour: {fileID: 8543308461744737650}
+  camerasObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  camerasRenderTextures:
+  - {fileID: 8400000, guid: 159f7ed7127b3814fa2d7cfc6da0f429, type: 2}
+  - {fileID: 8400000, guid: bee0ce1012cf16c4eb256607d3ed6761, type: 2}
+  - {fileID: 8400000, guid: d24baa8d32998f74ea3081579f49738d, type: 2}
+  - {fileID: 8400000, guid: 3f3b60f7d1a0ec64093386b543c73090, type: 2}
+  - {fileID: 8400000, guid: 2d3f1c7c9a04ee2438d485de12c10db1, type: 2}
+  - {fileID: 8400000, guid: 13d4952935219b64091d051499d86bbd, type: 2}
+  camerasMaterials:
+  - {fileID: 2100000, guid: 50e427994e5b0224f966b200c577b78b, type: 2}
+  - {fileID: 2100000, guid: f025bfafc9ecec74aa3aab468ef837d7, type: 2}
+  - {fileID: 2100000, guid: d811246c848733b4c8310b4dec5a5fdf, type: 2}
+  - {fileID: 2100000, guid: 82bace4c334919c4f92e87905c39fdf8, type: 2}
+  - {fileID: 2100000, guid: c4382cc6d54262b46913ae6fe8a3740e, type: 2}
+  - {fileID: 2100000, guid: 7eb7cd9bfc12d4c4198d1874ca5a1aa4, type: 2}
+  sendLiveButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentCameraText: {fileID: 0}
+  deskCamerasFovTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  handheldsFovTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  followUsernameTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  handheldsVrcPickups:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  initErrorWarningText: {fileID: 0}
+  cameraFovSliders:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  potatoButton: {fileID: 0}
+  liveMaterial: {fileID: 2100000, guid: 5a56ded101f363e46861c8fe1c4f360e, type: 2}
+  cameraJack: {fileID: 2100000, guid: bd8b723337ae5824fa61f693f76e943f, type: 2}
+  currentCamera: 0
+  camera1FollowUsername: 
+  camera2FollowUsername: 
+  camera3FollowUsername: 
+  camera4FollowUsername: 
+  camera5FollowUsername: 
+  camera6FollowUsername: 
+  camera1Follow: 0
+  camera2Follow: 0
+  camera3Follow: 0
+  camera4Follow: 0
+  camera5Follow: 0
+  camera6Follow: 0
+  camera1FOV: 60
+  camera2FOV: 60
+  camera3FOV: 60
+  camera4FOV: 60
+  camera5FOV: 60
+  camera6FOV: 60
+  colorGreen:
+    serializedVersion: 2
+    rgba: 4279010319
+  colorGrey:
+    serializedVersion: 2
+    rgba: 4294967295
+  colorRed:
+    serializedVersion: 2
+    rgba: 4278190335
+  colorBlack:
+    serializedVersion: 2
+    rgba: 4278190080
+--- !u!114 &8543308461744737650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457269348523597857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 3
+  serializedProgramAsset: {fileID: 11400000, guid: b8a8e160216c33c40ab04b3471e7e78f,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 9365f6d3a90c5d44ba5d43d3697111d5, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0

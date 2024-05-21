@@ -20,6 +20,8 @@ In the `Camera System_Console` UdonBehavior, all the lists like Cameras objects 
 The same `Camera System_Console` U# script has a basic auth hook, by default, nobody can play with the FOV or change the live camera or move the handhelds, your external script, or buttons etc. have to call the `authorize` and `deauthorize` for each user that have to have access. Like from a keypad asset or your own system.
 The camera light system also have this auth hook.
 
+For the light system, the `Camera` has an animator, which the animation is toggled on when using the `View 5` (aka crowd circle) as an example of custom view.
+
 By default the potato mode is enabled, authorizing the user disable it.
 
 # Known issues

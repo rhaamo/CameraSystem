@@ -24,11 +24,15 @@ For the light system, the `Camera` has an animator, which the animation is toggl
 
 By default the potato mode is enabled, authorizing the user disable it.
 
+Important about the `EventCameraSystem` prefab, the `Sphere` needs to be at the same place of `HugeSnapView`, basically when clicking on `HugeSnapView/Plane` the sphere needs to be inside the square bounds gizmo.
+
 # Known issues
 
 There is no "Follow player" system yet.
 
 Everything should be synced but that haven't been real-world tested yet.
+
+The `EventCameraSystem` prefab is a totaly mystery and sometimes doesn't work totally, in desktop `F10` and looking at the sphere sometimes works, but other time you have to put your camera in it or your head 🤷‍♀️
 
 Maybe other bugs, idk.
 

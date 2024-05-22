@@ -42,6 +42,7 @@ namespace CameraSystem {
         }
 
         void Start() {
+            Debug.Log($"[OTT_CAMERA_SYSTEM_LIGHT][Start] Initializing...");
             // Set all buttons to grey and set the text
             foreach (Image img in cameraButtons) {
                 if (Utilities.IsValid(img)) {
@@ -58,13 +59,22 @@ namespace CameraSystem {
         }
 
         public override void OnDeserialization() {
-            toggleView(currentCamera);
+            Debug.Log($"[OTT_CAMERA_SYSTEM_LIGHT][OnDeserialization] Received an update, current camera is now {currentCamera}/{cameraViewNames[currentCamera]}, last was {lastCamera}/{cameraViewNames[lastCamera]}");
+            if (currentCamera == lastCamera) {
+                Debug.Log($"[OTT_CAMERA_SYSTEM_LIGHT][toggleView] current camera == last camera, ignoring");
+                return;
+            }
+            toggleView(currentCamera, true);
         }
 
         // Remember that arrays starts at 0, so our index 0 is view 1, etc.
         public void toggleView(int index, bool force = false) {
             if (!isAuthorized && !force) {
                 Debug.Log($"[OTT_CAMERA_SYSTEM_LIGHT][toggleView] No fun allowed");
+                return;
+            }
+            if (index == currentCamera &&  !force) {
+                Debug.Log($"[OTT_CAMERA_SYSTEM_LIGHT][toggleView] index == current camera, doing nothing");
                 return;
             }
             Debug.Log($"[OTT_CAMERA_SYSTEM_LIGHT][toggleView] Switching to view {index+1}: {cameraViewNames[index]}");

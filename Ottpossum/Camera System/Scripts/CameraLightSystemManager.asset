@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: CameraLightSystemManager
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 164f8c8c361832d4b84a2aa0f7c43a9a,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: f4a2214918870f3449cff63316a6694d,
     type: 2}
   udonAssembly: 
   assemblyError: 

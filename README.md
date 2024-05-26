@@ -15,15 +15,22 @@ There is two systems:
 
 # Notes
 
+## Full system
 In the `Camera System_Console` UdonBehavior, all the lists like Cameras objects or cameras materials etc. have to be IN ORDER (1, 2, 3, 4...).
 
 The same `Camera System_Console` U# script has a basic auth hook, by default, nobody can play with the FOV or change the live camera or move the handhelds, your external script, or buttons etc. have to call the `authorize` and `deauthorize` for each user that have to have access. Like from a keypad asset or your own system.
 The camera light system also have this auth hook.
 
-For the light system, the `Camera` has an animator, which the animation is toggled on when using the `View 5` (aka crowd circle) as an example of custom view.
-
 By default the potato mode is enabled, authorizing the user disable it.
 
+## Light system
+For the light system, everything uses Unity Cinemachine, the Brain is on the `Camera Brain` object which also have the main camera with render texture.
+
+All cameras are priority 10, and active one switched to 11.
+
+The `View 5` is a "special" view in the fact that it does have a Look at and a dolly track to orbit around something, like a dancefloor, the dolly cart associated to the track is attached to the `View 5` Virtual camera.
+
+## All
 Important about the `EventCameraSystem` prefab, the `Sphere` needs to be at the same place of `HugeSnapView`, basically when clicking on `HugeSnapView/Plane` the sphere needs to be inside the square bounds gizmo.
 
 # Known issues

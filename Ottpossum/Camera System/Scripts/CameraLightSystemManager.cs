@@ -5,15 +5,14 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 using TMPro;
+using Cinemachine;
 
 namespace CameraSystem {
     [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
     public class CameraLightSystemManager : UdonSharpBehaviour {
         [Header("Cameras")]
-        public GameObject theCamera;
-        public Transform[] cameraTransforms;
+        public CinemachineVirtualCamera[] virtualCameras;
         public string[] cameraViewNames;
-        public Animator cameraAnimator;
 
         [Header("UI")]
         public Image[] cameraButtons;
@@ -83,19 +82,17 @@ namespace CameraSystem {
             // Set the button color
             cameraButtons[index].color = colorGreen;
 
-            // Change the camera position
-            theCamera.transform.position = cameraTransforms[index].transform.position;
-            theCamera.transform.rotation = cameraTransforms[index].transform.rotation;
+            // Reset all cameras to priority 10
+            foreach (CinemachineVirtualCamera cam in virtualCameras) {
+                if (Utilities.IsValid(cam)) {
+                    cam.Priority = 10;
+                }
+            }
+            // Set the wanted camera priority to 11
+            virtualCameras[index].Priority = 11;
 
             // Set the camera live text
             currentCameraText.text = cameraViewNames[index];
-
-            // Special camera "View 5"  animation
-            if (index == 4) {
-                cameraAnimator.SetBool("Motion", true);
-            } else {
-                cameraAnimator.SetBool("Motion", false);
-            }
 
             // Set our indexes
             currentCamera = index;
